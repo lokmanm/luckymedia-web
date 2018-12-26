@@ -1,0 +1,118 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: stretch;
+
+    .logo {
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        color: black;
+    }
+
+    .menu {
+        width: 100%;
+        background-color: black;
+        padding: 20px;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 50px 0px 0px 50px;
+
+            li {
+                display: inline;
+                color: white;
+                padding: 20px;
+                font-weight: 700;
+                font-size: 0.75rem;
+                letter-spacing: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+.header {
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    .left {
+        background-color: white;
+        color: black;
+        width: 100%;
+        display: flex;
+
+        p {
+            font-size: 7.5rem;
+            font-weight: 900;
+            margin: auto;
+        }
+    }
+
+    .right {
+        background-color: black;
+        color: white;
+        width: 100%;
+        display: flex;
+
+        p {
+            margin: auto;
+            font-weight: 900;
+            font-size: 7.5rem;
+        }
+    }
+}
+
+.about {
+    background-color: #f1f2f2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .about-title {
+        margin-top: 5rem;
+        margin-left: 1rem;
+        padding-left: 100px;
+        font-weight: 700;
+        font-size: 4em;
+    }
+
+    .about-desc {
+        color: #808285;
+        font-family: 'Merriweather';
+        font-weight: 400;
+        margin-left: 1rem;
+        padding-left: 100px;
+        padding-right: 100px;
+        line-height: 2rem;
+    }
+}
+
+.heading-text {
+    display: inline-block;
+    letter-spacing: 5px;
+    font-weight: 900;
+    padding-top: 100px;
+    padding-left: 100px;
+
+    &:before {
+        content: "";
+        border: 0.6rem solid #fdb62d;
+        width: 3rem;
+        margin: 0 1rem;
+        transform: translateY(-1rem);
+    }
+
+}
