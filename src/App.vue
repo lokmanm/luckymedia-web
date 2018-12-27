@@ -3,6 +3,7 @@
     <navigation/>
     <header-slide/>
     <about-us/>
+    <what-we-do/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Navigation from "./components/Navigation.vue";
 import HeaderSlide from "./components/HeaderSlide.vue";
 import AboutUs from "./components/AboutUs.vue";
+import WhatWeDo from "./components/WhatWeDo.vue";
 export default {
   name: "app",
   components: {
     Navigation,
     HeaderSlide,
-    AboutUs
+    AboutUs,
+    WhatWeDo
   }
 };
 </script>

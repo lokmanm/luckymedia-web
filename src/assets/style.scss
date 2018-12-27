@@ -1,10 +1,33 @@
+$grey: #f1f2f2;
+$grey-text: #808285;
+$orange: #fdb62d;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
 html {
     font-family: "Montserrat", sans-serif;
+}
+
+.flex-container {
+    height: 100vh;
 }
 
 .header-navigation {
     display: flex;
     flex-direction: row;
+    height: 40px;
     align-items: baseline;
     align-content: stretch;
 
@@ -21,14 +44,17 @@ html {
         padding: 20px;
 
         ul {
+            position: absolute;
+            top: 40px;
+            right: 150px;
             list-style-type: none;
-            margin: 0;
-            padding: 50px 0px 0px 50px;
+
 
             li {
                 display: inline;
                 color: white;
                 padding: 20px;
+                margin-right: 10px;
                 font-weight: 700;
                 font-size: 0.75rem;
                 letter-spacing: 3px;
@@ -76,13 +102,14 @@ html {
 }
 
 .about {
-    background-color: #f1f2f2;
+    background-color: $grey;
     height: 100vh;
     display: flex;
     flex-direction: column;
 
     .about-title {
-        margin-top: 5rem;
+        position: relative;
+        top: 10px;
         margin-left: 1rem;
         padding-left: 100px;
         font-weight: 700;
@@ -90,7 +117,7 @@ html {
     }
 
     .about-desc {
-        color: #808285;
+        color: $grey-text;
         font-family: 'Merriweather';
         font-weight: 400;
         margin-left: 1rem;
@@ -109,10 +136,49 @@ html {
 
     &:before {
         content: "";
-        border: 0.6rem solid #fdb62d;
+        border: 0.6rem solid $orange;
         width: 3rem;
         margin: 0 1rem;
         transform: translateY(-1rem);
     }
 
+}
+
+.card-container {
+    display: flex;
+    padding: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        width: 100%;
+
+        .title {
+            text-transform: uppercase;
+            margin-top: 20px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            font-family: 'Merriweather';
+            margin-top: 10px;
+            line-height: 1.5rem;
+            color: $grey-text;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .icon {
+            margin: auto;
+            fill: $orange;
+        }
+    }
 }
