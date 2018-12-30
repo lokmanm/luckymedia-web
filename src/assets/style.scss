@@ -18,6 +18,7 @@ $orange: #fdb62d;
 
 html {
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .flex-container {
@@ -27,6 +28,7 @@ html {
 .header-navigation {
     display: flex;
     flex-direction: row;
+    background-color: black;
     height: 40px;
     align-items: baseline;
     align-content: stretch;
@@ -34,13 +36,11 @@ html {
     .logo {
         width: 100%;
         padding: 20px;
-        background-color: white;
-        color: black;
+        color: white;
     }
 
     .menu {
         width: 100%;
-        background-color: black;
         padding: 20px;
 
         ul {
@@ -70,33 +70,19 @@ html {
 
 .header {
     color: white;
+    background-color: black;
     height: 100vh;
     display: flex;
     flex-direction: row;
 
-    .left {
-        background-color: white;
-        color: black;
+    .title {
         width: 100%;
         display: flex;
 
-        p {
+        .element {
             font-size: 7.5rem;
             font-weight: 900;
             margin: auto;
-        }
-    }
-
-    .right {
-        background-color: black;
-        color: white;
-        width: 100%;
-        display: flex;
-
-        p {
-            margin: auto;
-            font-weight: 900;
-            font-size: 7.5rem;
         }
     }
 }
@@ -124,6 +110,45 @@ html {
         padding-left: 100px;
         padding-right: 100px;
         line-height: 2rem;
+    }
+
+    .team-container {
+        display: flex;
+        padding: 115px;
+        margin-top: 20px;
+
+        .team {
+            padding: 20px;
+            display: flex;
+            margin-right: 20px;
+
+            .photo {
+                height: 150px;
+                border-radius: 50%;
+                border: 5px solid $orange;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+                .title {
+                    font-weight: 900;
+                    font-size: 1.5em;
+                    margin-bottom: 15px;
+                    letter-spacing: 1px;
+                }
+
+                .desc {
+                    font-family: "Merriweather";
+                    color: $grey-text;
+                    font-size: 0.8em;
+                    line-height: 1.5rem;
+                }
+            }
+
+        }
     }
 }
 
@@ -179,6 +204,38 @@ html {
         .icon {
             margin: auto;
             fill: $orange;
+        }
+    }
+}
+
+
+
+.gallery-container {
+    background-color: $grey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        padding: 20px;
+
+        .cell {
+            align-self: center;
+            margin: 1rem;
+        }
+
+        .cell img {
+            display: block;
+        }
+
+        .responsive-image {
+            max-width: 100%;
         }
     }
 }

@@ -6,9 +6,35 @@
         class="about-title"
       >LuckyMedia is a design & printing agency based in Gostivar. We design thoughtful experiences and beautiful brand aesthetics.</h1>
       <h3 class="about-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend congue nunc. In ac odio at nisi interdum porta eu et justo. Duis varius congue lacus. Nunc quis massa aliquam, rhoncus orci feugiat, imperdiet augue. Fusce ac mi vel mauris mollis scelerisque id non arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-        Vivamus a fringilla erat. Suspendisse potenti.
+        We can work in different fields such as website development, rebranding, various styles of illustrations or even tell your story through motion design.
+        Our goal is to offer you the most accurate and original work.
       </h3>
+      <div class="team-container">
+        <div class="team">
+          <img class="photo" src="@/assets/lokman-bw.jpg">
+          <div class="info">
+            <div class="title">LOKMAN MUSLIU</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <img class="photo" src="@/assets/lokman-bw.jpg">
+          <div class="info">
+            <div class="title">ARLIND MUSLIU</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
