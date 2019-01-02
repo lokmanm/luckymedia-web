@@ -1,0 +1,63 @@
+.about {
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+
+    .about-title {
+        position: relative;
+        top: 10px;
+        margin-left: 1rem;
+        padding-left: 100px;
+        font-weight: 700;
+        font-size: 3.8em;
+    }
+
+    .about-desc {
+        color: $grey-text;
+        font-family: 'Merriweather';
+        font-weight: 400;
+        margin-left: 1rem;
+        padding-left: 100px;
+        padding-right: 100px;
+        line-height: 2rem;
+    }
+
+    .team-container {
+        display: flex;
+        padding: 115px;
+        margin-top: 20px;
+
+        .team {
+            padding: 20px;
+            display: flex;
+            margin-right: 20px;
+
+            .photo {
+                height: 150px;
+                border-radius: 50%;
+                border: 5px solid $orange;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+                .title {
+                    font-weight: 900;
+                    font-size: 1.5em;
+                    margin-bottom: 15px;
+                    letter-spacing: 1px;
+                }
+
+                .desc {
+                    font-family: "Merriweather";
+                    color: $grey-text;
+                    font-size: 0.8em;
+                    line-height: 1.5rem;
+                }
+            }
+
+        }
+    }
+}

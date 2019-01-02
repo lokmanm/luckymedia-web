@@ -2,6 +2,8 @@ $grey: #f1f2f2;
 $grey-text: #808285;
 $orange: #fdb62d;
 
+@import "./styles/reset.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -21,137 +23,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.flex-container {
-    height: 100vh;
-}
-
-.header-navigation {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    height: 40px;
-    align-items: baseline;
-    align-content: stretch;
-
-    .logo {
-        width: 100%;
-        padding: 20px;
-        color: white;
-    }
-
-    .menu {
-        width: 100%;
-        padding: 20px;
-
-        ul {
-            position: absolute;
-            top: 40px;
-            right: 150px;
-            list-style-type: none;
-
-
-            li {
-                display: inline;
-                color: white;
-                padding: 20px;
-                margin-right: 10px;
-                font-weight: 700;
-                font-size: 0.75rem;
-                letter-spacing: 3px;
-                cursor: pointer;
-
-                &:hover {
-                    font-weight: 900;
-                }
-            }
-        }
-    }
-}
-
-.header {
-    color: white;
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-
-    .title {
-        width: 100%;
-        display: flex;
-
-        .element {
-            font-size: 7.5rem;
-            font-weight: 900;
-            margin: auto;
-        }
-    }
-}
-
-.about {
-    background-color: $grey;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    .about-title {
-        position: relative;
-        top: 10px;
-        margin-left: 1rem;
-        padding-left: 100px;
-        font-weight: 700;
-        font-size: 4em;
-    }
-
-    .about-desc {
-        color: $grey-text;
-        font-family: 'Merriweather';
-        font-weight: 400;
-        margin-left: 1rem;
-        padding-left: 100px;
-        padding-right: 100px;
-        line-height: 2rem;
-    }
-
-    .team-container {
-        display: flex;
-        padding: 115px;
-        margin-top: 20px;
-
-        .team {
-            padding: 20px;
-            display: flex;
-            margin-right: 20px;
-
-            .photo {
-                height: 150px;
-                border-radius: 50%;
-                border: 5px solid $orange;
-            }
-
-            .info {
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-
-                .title {
-                    font-weight: 900;
-                    font-size: 1.5em;
-                    margin-bottom: 15px;
-                    letter-spacing: 1px;
-                }
-
-                .desc {
-                    font-family: "Merriweather";
-                    color: $grey-text;
-                    font-size: 0.8em;
-                    line-height: 1.5rem;
-                }
-            }
-
-        }
-    }
-}
-
 .heading-text {
     display: inline-block;
     letter-spacing: 5px;
@@ -169,73 +40,10 @@ html {
 
 }
 
-.card-container {
-    display: flex;
-    padding: 100px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
-        width: 100%;
-
-        .title {
-            text-transform: uppercase;
-            margin-top: 20px;
-            font-weight: 900;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-        }
-
-        .description {
-            font-family: 'Merriweather';
-            margin-top: 10px;
-            line-height: 1.5rem;
-            color: $grey-text;
-            text-align: center;
-            font-size: 0.8rem;
-        }
-
-        .icon {
-            margin: auto;
-            fill: $orange;
-        }
-    }
-}
-
-
-
-.gallery-container {
-    background-color: $grey;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    .gallery-grid {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        align-content: center;
-        padding: 20px;
-
-        .cell {
-            align-self: center;
-            margin: 1rem;
-        }
-
-        .cell img {
-            display: block;
-        }
-
-        .responsive-image {
-            max-width: 100%;
-        }
-    }
-}
+@import "./styles/_navigation";
+@import "./styles/_header";
+@import "./styles/_about";
+@import "./styles/_cards";
+@import "./styles/_gallery";
+@import "./styles/_clients";
+@import "./styles/_contact";

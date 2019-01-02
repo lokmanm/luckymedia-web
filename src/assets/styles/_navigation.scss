@@ -1,0 +1,43 @@
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: baseline;
+    align-content: stretch;
+
+    .logo {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        padding: 20px;
+        color: white;
+    }
+
+    .menu {
+        padding: 20px;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+
+        ul {
+
+            list-style-type: none;
+
+
+            li {
+                display: inline;
+                color: white;
+                padding: 20px;
+                margin-right: 10px;
+                font-weight: 700;
+                font-size: 0.75rem;
+                letter-spacing: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}

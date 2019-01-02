@@ -1,0 +1,46 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+
+    .card-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        flex: 2 0 0;
+        align-items: center;
+        padding: 20px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+
+            .title {
+                text-transform: uppercase;
+                margin-top: 20px;
+                font-weight: 900;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+            }
+
+            .description {
+                font-family: 'Merriweather';
+                margin-top: 10px;
+                line-height: 1.5rem;
+                color: $grey-text;
+                text-align: center;
+                font-size: 0.8rem;
+            }
+
+            .icon {
+                margin: auto;
+                fill: $orange;
+            }
+        }
+    }
+}

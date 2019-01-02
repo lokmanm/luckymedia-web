@@ -5,6 +5,8 @@
     <about-us/>
     <what-we-do/>
     <gallery/>
+    <clients/>
+    <contact/>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import HeaderSlide from "./components/HeaderSlide.vue";
 import AboutUs from "./components/AboutUs.vue";
 import WhatWeDo from "./components/WhatWeDo.vue";
 import Gallery from "./components/Gallery.vue";
+import Clients from "./components/Clients.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "app",
@@ -22,7 +26,9 @@ export default {
     HeaderSlide,
     AboutUs,
     WhatWeDo,
-    Gallery
+    Gallery,
+    Clients,
+    Contact
   },
   data() {
     return {

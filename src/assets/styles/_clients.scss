@@ -1,0 +1,33 @@
+.client-container {
+    background-color: #111111;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .heading-text {
+        color: white;
+    }
+
+    .client-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+        flex: 2 0 0;
+        padding: 50px;
+
+        .client {
+            text-align: center;
+            flex: 0 0 25%;
+            padding: 50px;
+
+            svg {
+                height: 60px;
+                fill: white;
+            }
+        }
+    }
+}

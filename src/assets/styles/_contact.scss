@@ -1,0 +1,108 @@
+.contact-container {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    .info-heading {
+        display: inline-block;
+        letter-spacing: 5px;
+        font-weight: 900;
+        color: white;
+
+        &:before {
+            content: "";
+            border: 0.6rem solid $orange;
+            width: 3rem;
+            margin: 0 1rem;
+            transform: translateY(-1rem);
+        }
+
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        ;
+        padding: 100px;
+
+        .info-title {
+            color: white;
+            font-size: 7rem;
+            font-weight: 900;
+            margin-left: 1rem;
+            line-height: 1.3;
+
+            &:after {
+                content: "hello.";
+                color: $orange;
+                font-size: 8rem;
+            }
+        }
+
+        .info-details {
+            color: white;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 3rem;
+            margin-left: 1rem;
+            line-height: 2;
+        }
+
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        ;
+        ;
+        padding: 100px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 3rem;
+            margin-left: 1rem;
+
+            input[type=text],
+            input[type=email],
+            textarea {
+                padding: 20px;
+                margin-top: 2rem;
+                background-color: black;
+                color: white;
+                border: 2px solid $orange;
+
+                &:focus {
+                    background-color: $orange;
+                    color: black;
+                }
+
+            }
+
+            button {
+                padding: 20px;
+                margin-top: 2rem;
+                background-color: $orange;
+                color: black;
+                font-weight: 700;
+                letter-spacing: 5px;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    border: 2px solid $orange;
+                }
+            }
+
+            textarea {
+                height: 150px;
+            }
+        }
+    }
+}

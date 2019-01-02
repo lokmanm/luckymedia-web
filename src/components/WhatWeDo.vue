@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="flex-container">
+    <div class="card-container">
       <h4 class="heading-text">WHAT WE DO</h4>
-      <div class="card-container">
+      <div class="card-grid">
         <div class="card">
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.44 140" height="140px">

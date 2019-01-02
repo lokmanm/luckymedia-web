@@ -39,6 +39,18 @@ export default {
         },
         {
           url: require("@/assets/lokman-color.jpg")
+        },
+        {
+          url: require("@/assets/lokman-bw.jpg")
+        },
+        {
+          url: require("@/assets/lokman-color.jpg")
+        },
+        {
+          url: require("@/assets/lokman-bw.jpg")
+        },
+        {
+          url: require("@/assets/lokman-color.jpg")
         }
       ]
     };

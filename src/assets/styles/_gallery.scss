@@ -1,0 +1,28 @@
+.gallery-container {
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        padding: 20px;
+
+        .cell {
+            align-self: center;
+            margin: 1rem;
+        }
+
+        .cell img {
+            display: block;
+        }
+
+        .responsive-image {
+            max-width: 100%;
+        }
+    }
+}
