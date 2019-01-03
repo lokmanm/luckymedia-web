@@ -4,7 +4,7 @@
       <h4 class="heading-text">PORTFOLIO</h4>
       <div class="gallery-grid">
         <div v-for="image in images" :key="image.id" class="cell">
-          <img width="350px" class="responsive-image" :src="image.url" alt>
+          <img class="responsive-image" :src="image.url" alt>
         </div>
       </div>
     </div>
@@ -17,40 +17,22 @@ export default {
     return {
       images: [
         {
-          url: require("@/assets/lokman-bw.jpg")
+          url: require("@/assets/images/SanaProtect.jpg")
         },
         {
-          url: require("@/assets/lokman-color.jpg")
+          url: require("@/assets/images/Innova.jpg")
         },
         {
-          url: require("@/assets/lokman-bw.jpg")
+          url: require("@/assets/images/Bbc.jpg")
         },
         {
-          url: require("@/assets/lokman-color.jpg")
+          url: require("@/assets/images/Barber.jpg")
         },
         {
-          url: require("@/assets/lokman-bw.jpg")
+          url: require("@/assets/images/Havana.jpg")
         },
         {
-          url: require("@/assets/lokman-color.jpg")
-        },
-        {
-          url: require("@/assets/lokman-bw.jpg")
-        },
-        {
-          url: require("@/assets/lokman-color.jpg")
-        },
-        {
-          url: require("@/assets/lokman-bw.jpg")
-        },
-        {
-          url: require("@/assets/lokman-color.jpg")
-        },
-        {
-          url: require("@/assets/lokman-bw.jpg")
-        },
-        {
-          url: require("@/assets/lokman-color.jpg")
+          url: require("@/assets/images/Metal.jpg")
         }
       ]
     };

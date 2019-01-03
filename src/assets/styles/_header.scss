@@ -1,6 +1,6 @@
 .header {
-    color: white;
     background-color: black;
+    color: white;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -10,9 +10,20 @@
         display: flex;
 
         .element {
-            font-size: 7.5rem;
             font-weight: 900;
             margin: auto;
+
+            @include r(320) {
+                font-size: 3rem;
+            }
+
+            @include r(768) {
+                font-size: 5rem;
+            }
+
+            @include r(1500) {
+                font-size: 7.5rem;
+            }
         }
     }
 }

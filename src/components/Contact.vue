@@ -2,7 +2,7 @@
   <div>
     <div class="contact-container">
       <div class="info">
-        <h4 class="info-heading">CONTACT US</h4>
+        <!--  <h4 class="info-heading">CONTACT US</h4> -->
         <h1 class="info-title">say
           <br>
         </h1>

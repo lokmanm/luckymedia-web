@@ -10,7 +10,7 @@
           <vardar></vardar>
         </div>
         <div class="client">
-          <reka></reka>
+          <globi></globi>
         </div>
         <div class="client">
           <betonida></betonida>
@@ -25,7 +25,7 @@
           <seeu></seeu>
         </div>
         <div class="client">
-          <globi></globi>
+          <reka></reka>
         </div>
         <div class="client">
           <culture></culture>

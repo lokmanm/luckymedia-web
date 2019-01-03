@@ -1,9 +1,16 @@
 .client-container {
     background-color: #111111;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    @include r(320) {
+        height: 1000px;
+    }
+
+    @include r(1500) {
+        height: 100vh;
+    }
 
     .heading-text {
         color: white;
@@ -14,19 +21,59 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: stretch;
         align-content: center;
         flex: 2 0 0;
         padding: 50px;
 
+        @include r(320) {
+            padding: 20px;
+            align-items: center;
+        }
+
+        @include r(768) {
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        @include r(1500) {
+            align-items: stretch;
+        }
+
         .client {
             text-align: center;
-            flex: 0 0 25%;
-            padding: 50px;
+
+
+            @include r(320) {
+                padding: 30px;
+            }
+
+            @include r(480) {
+                flex: 0 0 70%;
+            }
+
+            @include r(768) {
+                flex: 0 0 35%;
+            }
+
+            @include r(1500) {
+                padding: 50px;
+                flex: 0 0 25%;
+            }
 
             svg {
-                height: 60px;
                 fill: white;
+
+                @include r(320) {
+                    height: 35px;
+                }
+
+                @include r(768) {
+                    height: 45px;
+                }
+
+                @include r(1500) {
+                    height: 60px;
+                }
             }
         }
     }

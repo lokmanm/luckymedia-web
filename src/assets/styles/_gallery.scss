@@ -8,13 +8,26 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         align-content: center;
         padding: 20px;
 
         .cell {
             align-self: center;
+            flex: 0 0 25%;
             margin: 1rem;
+
+            @include r(320) {
+                flex: 0 0 100%;
+            }
+
+            @include r(768) {
+                flex: 0 0 35%;
+            }
+
+            @include r(1500) {
+                flex: 0 0 25%;
+            }
         }
 
         .cell img {
