@@ -13,6 +13,11 @@
         height: 1200px;
     }
 
+    @include r(1024) {
+        flex-direction: row;
+        height: 100vh;
+    }
+
     @include r(1500) {
         flex-direction: row;
         height: 100vh;
@@ -49,6 +54,12 @@
             width: auto;
             padding: 30px;
             justify-content: center;
+        }
+
+        @include r(1024) {
+            width: 100%;
+            padding: 50px;
+            justify-content: flex-start;
         }
 
         @include r(1500) {
@@ -111,6 +122,12 @@
             width: auto;
             padding: 30px;
             justify-content: center;
+        }
+
+        @include r(1024) {
+            width: 100%;
+            padding: 50px;
+            justify-content: flex-start;
         }
 
         @include r(1500) {

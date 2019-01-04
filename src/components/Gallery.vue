@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="gallery-container">
-      <h4 class="heading-text">PORTFOLIO</h4>
-      <div class="gallery-grid">
+      <h4 class="heading-text" data-aos="fade-up">PORTFOLIO</h4>
+      <div class="gallery-grid" data-aos="fade-up" data-aos-duration="3000">
         <div v-for="image in images" :key="image.id" class="cell">
           <img class="responsive-image" :src="image.url" alt>
         </div>

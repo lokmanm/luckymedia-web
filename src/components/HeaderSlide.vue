@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      <div class="title">
+      <div class="title" data-aos="fade-up" data-aos-duration="3000">
         <span class="element"></span>
       </div>
     </div>
@@ -13,7 +13,7 @@ import Typed from "typed.js";
 export default {
   mounted() {
     var options = {
-      strings: ["web. |", "design. |", "branding. |", "print. |", "social. |"],
+      strings: ["web.", "design.", "branding.", "print.", "social."],
       loop: true,
       showCursor: false,
       typeSpeed: 50

@@ -64,15 +64,14 @@
 
             list-style-type: none;
 
+            &:hover>li {
+                opacity: 0.2;
+            }
 
             li {
                 display: inline;
                 color: white;
-                padding: 20px;
-                margin-right: 10px;
                 font-weight: 700;
-                font-size: 0.75rem;
-                letter-spacing: 3px;
                 cursor: pointer;
 
                 @include r(1024) {
@@ -82,8 +81,16 @@
                     letter-spacing: 1px;
                 }
 
+                @include r(1500) {
+                    font-size: 0.75rem;
+                    letter-spacing: 3px;
+                    padding: 20px;
+                    margin-right: 10px;
+                }
+
                 &:hover {
                     font-weight: 900;
+                    opacity: 1;
                 }
             }
         }

@@ -1,8 +1,7 @@
 <template>
   <div>
     <div class="contact-container">
-      <div class="info">
-        <!--  <h4 class="info-heading">CONTACT US</h4> -->
+      <div class="info" data-aos="fade-up" data-aos-duration="3000">
         <h1 class="info-title">say
           <br>
         </h1>
@@ -16,7 +15,7 @@
           </p>
         </div>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up" data-aos-duration="3000">
         <h4 class="info-heading">SEND A MESSAGE</h4>
         <form>
           <input type="text" name="name" placeholder="Name">

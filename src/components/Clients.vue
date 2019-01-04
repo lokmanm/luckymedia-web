@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="client-container">
-      <h4 class="heading-text">CLIENTS</h4>
-      <div class="client-grid">
+      <h4 class="heading-text" data-aos="fade-up">CLIENTS</h4>
+      <div class="client-grid" data-aos="fade-up" data-aos-duration="3000">
         <div class="client">
           <dem-lab></dem-lab>
         </div>

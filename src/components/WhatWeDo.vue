@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="card-container">
-      <h4 class="heading-text">WHAT WE DO</h4>
-      <div class="card-grid">
+      <h4 class="heading-text" data-aos="fade-up">WHAT WE DO</h4>
+      <div class="card-grid" data-aos="fade-up" data-aos-duration="2000">
         <div class="card">
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.44 140">

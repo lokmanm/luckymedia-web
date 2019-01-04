@@ -30,6 +30,7 @@
 
         @include r(1500) {
             flex-direction: row;
+            flex-wrap: nowrap;
         }
 
         .card {

@@ -16,6 +16,12 @@
             margin: 0;
         }
 
+        @include r(768) {
+            font-size: 2.5rem;
+            padding: 60px;
+            margin: 0;
+        }
+
         @include r(1024) {
             font-size: 3em;
             padding-left: 80px;
@@ -38,6 +44,12 @@
         @include r(320) {
             font-size: 1.2rem;
             padding: 20px;
+            margin: 0;
+        }
+
+        @include r(768) {
+            font-size: 1.2rem;
+            padding: 60px;
             margin: 0;
         }
 

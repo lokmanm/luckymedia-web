@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header-navigation">
-      <div class="logo">
+      <div class="logo" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.41 76.43" height="70px">
           <g>
             <g>
@@ -57,7 +57,7 @@
           </g>
         </svg>
       </div>
-      <div class="menu">
+      <div class="menu" data-aos="fade-up" data-aos-duration="3000">
         <ul>
           <li>HOME</li>
           <li>ABOUT US</li>

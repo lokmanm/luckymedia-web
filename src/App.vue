@@ -7,6 +7,7 @@
     <gallery/>
     <clients/>
     <contact/>
+    <footer>Copyright © Lucky Media {{ copyDate }}</footer>
   </div>
 </template>
 
@@ -38,6 +39,12 @@ export default {
         scrollBar: false
       }
     };
+  },
+
+  computed: {
+    copyDate() {
+      return new Date().getFullYear();
+    }
   }
 };
 </script>
@@ -45,4 +52,11 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat:700,900");
 @import "src/assets/style.scss";
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 0px 50px 100px;
+  text-align: center;
+}
 </style>
