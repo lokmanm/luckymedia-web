@@ -1,5 +1,5 @@
 <template>
-  <div class="about-container">
+  <div id="about" class="about-container">
     <div class="about">
       <h4 class="heading-text" data-aos="fade-up" data-aos-duration="3000">ABOUT US</h4>
       <h1

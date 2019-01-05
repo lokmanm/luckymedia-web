@@ -74,6 +74,14 @@
                 font-weight: 700;
                 cursor: pointer;
 
+                a {
+                    text-decoration: none;
+
+                    &:visited {
+                        color: white;
+                    }
+                }
+
                 @include r(1024) {
                     font-size: 0.65rem;
                     margin-right: 5px;

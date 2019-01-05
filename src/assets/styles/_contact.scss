@@ -79,11 +79,10 @@
             }
 
             @include r(1500) {
-                font-size: 7rem;
+                font-size: 5rem;
             }
 
-            &:after {
-                content: "hello.";
+            .info-sub {
                 color: $orange;
 
                 @include r(320) {
@@ -91,7 +90,7 @@
                 }
 
                 @include r(1500) {
-                    font-size: 8rem;
+                    font-size: 6rem;
                 }
             }
         }
@@ -188,4 +187,20 @@
             }
         }
     }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 20px 0px 20px 0px;
+
+    @include r(320) {}
+
+    @include r(1024) {}
+
+    @include r(1024) {}
+
+    @include r(1500) {}
 }

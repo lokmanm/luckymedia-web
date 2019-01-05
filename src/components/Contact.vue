@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <div id="contact">
     <div class="contact-container">
       <div class="info" data-aos="fade-up" data-aos-duration="3000">
         <h1 class="info-title">say
           <br>
+          <span class="info-sub"></span>
         </h1>
         <h4 class="info-heading">DETAILS</h4>
         <div class="info-details">
@@ -29,7 +30,27 @@
 </template>
 
 <script>
-export default {};
+import Typed from "typed.js";
+export default {
+  mounted() {
+    var options = {
+      strings: [
+        "hello.",
+        "tung.",
+        "здраво.",
+        "merhaba.",
+        "hallo.",
+        "ciao.",
+        "bonjour."
+      ],
+      loop: true,
+      showCursor: true,
+      smartBackspace: true,
+      typeSpeed: 100
+    };
+    new Typed(".info-sub", options);
+  }
+};
 </script>
 
 <style>

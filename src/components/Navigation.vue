@@ -60,10 +60,18 @@
       <div class="menu" data-aos="fade-up" data-aos-duration="3000">
         <ul>
           <li>HOME</li>
-          <li>ABOUT US</li>
-          <li>SERVICES</li>
-          <li>PORTFOLIO</li>
-          <li>CONTACT US</li>
+          <li>
+            <a href="#about">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#services">SERVICES</a>
+          </li>
+          <li>
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT US</a>
+          </li>
         </ul>
       </div>
     </div>

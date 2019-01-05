@@ -11,6 +11,7 @@
 
         .element {
             font-weight: 900;
+            letter-spacing: 5px;
             margin: auto;
 
             @include r(320) {

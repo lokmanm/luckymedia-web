@@ -31,16 +31,6 @@ export default {
     Clients,
     Contact
   },
-  data() {
-    return {
-      options: {
-        scrollOverflow: true,
-        navigation: true,
-        scrollBar: false
-      }
-    };
-  },
-
   computed: {
     copyDate() {
       return new Date().getFullYear();
@@ -52,11 +42,4 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat:700,900");
 @import "src/assets/style.scss";
-
-footer {
-  background-color: black;
-  color: white;
-  padding: 10px 0px 50px 100px;
-  text-align: center;
-}
 </style>
