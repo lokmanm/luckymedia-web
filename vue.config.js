@@ -1,5 +1,7 @@
 module.exports = {
-    baseUrl: "/LuckyMedia-Web/",
+    baseUrl: process.env.NODE_ENV === 'production' ?
+        '/production-sub-path/' :
+        '/',
     chainWebpack: (config) => {
         const svgRule = config.module.rule('svg');
 
