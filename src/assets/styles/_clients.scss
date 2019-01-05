@@ -5,7 +5,11 @@
     justify-content: flex-start;
 
     @include r(320) {
-        height: 1000px;
+        height: 1200px;
+    }
+
+    @include r(480) {
+        height: 1200px;
     }
 
     @include r(1500) {
@@ -14,6 +18,34 @@
 
     .heading-text {
         color: white;
+    }
+
+    .client-title {
+        color: white;
+        margin-left: 1rem;
+
+        @include r(320) {
+            font-size: 1em;
+            line-height: 1.7;
+        }
+
+        @include r(480) {
+            font-size: 1.5em;
+            line-height: 1.7;
+        }
+
+        @include r(768) {
+            padding: 20px 0px 0px 45px;
+            font-size: 2em;
+        }
+
+        @include r(1024) {
+            padding: 20px 0px 0px 80px;
+        }
+
+        @include r(1500) {
+            padding: 20px 0px 0px 100px;
+        }
     }
 
     .client-grid {

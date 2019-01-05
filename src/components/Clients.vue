@@ -2,6 +2,11 @@
   <div>
     <div class="client-container">
       <h4 class="heading-text" data-aos="fade-up">CLIENTS</h4>
+      <h1
+        class="client-title"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >Here are some of the brands we have had the privilege to work with.</h1>
       <div class="client-grid" data-aos="fade-up" data-aos-duration="3000">
         <div class="client">
           <dem-lab></dem-lab>
