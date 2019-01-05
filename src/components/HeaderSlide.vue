@@ -16,7 +16,7 @@ export default {
       strings: ["web.", "design.", "branding.", "print.", "social."],
       loop: true,
       showCursor: false,
-      typeSpeed: 50
+      typeSpeed: 100
     };
     new Typed(".element", options);
   }
