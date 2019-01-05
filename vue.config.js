@@ -1,7 +1,5 @@
 module.exports = {
-    baseUrl: process.env.NODE_ENV === 'production' ?
-        '/production-sub-path/' :
-        '/',
+    baseUrl: '',
     chainWebpack: (config) => {
         const svgRule = config.module.rule('svg');
 
