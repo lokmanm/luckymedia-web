@@ -18,7 +18,7 @@
       </div>
       <div class="box" data-aos="fade-up" data-aos-duration="3000">
         <h4 class="info-heading">SEND A MESSAGE</h4>
-        <form>
+        <form action="https://formspree.io/lokman.musliu@gmail.com" method="POST">
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="email" placeholder="Email">
           <textarea name="message" placeholder="Message"></textarea>

@@ -59,7 +59,9 @@
       </div>
       <div class="menu" data-aos="fade-up" data-aos-duration="3000">
         <ul>
-          <li>HOME</li>
+          <li>
+            <a href="#">HOME</a>
+          </li>
           <li>
             <a href="#about">ABOUT US</a>
           </li>

@@ -70,12 +70,12 @@
 
             li {
                 display: inline;
-                color: white;
-                font-weight: 700;
                 cursor: pointer;
 
                 a {
                     text-decoration: none;
+                    color: white;
+                    font-weight: 700;
 
                     &:visited {
                         color: white;
