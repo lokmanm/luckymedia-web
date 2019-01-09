@@ -12,6 +12,7 @@ $orange: #fdb62d;
     border: 0;
     outline: 0;
     vertical-align: baseline;
+    -webkit-overflow-scrolling: touch;
 }
 
 .clearfix::after {
