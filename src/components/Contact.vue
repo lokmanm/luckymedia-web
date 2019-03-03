@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
     <div class="contact-container">
-      <div class="info" data-aos="fade-up" data-aos-duration="3000">
+      <div class="info">
         <h1 class="info-title">say
           <br>
           <span class="info-sub"></span>
@@ -16,7 +16,7 @@
           </p>
         </div>
       </div>
-      <div class="box" data-aos="fade-up" data-aos-duration="3000">
+      <div class="box">
         <h4 class="info-heading">SEND A MESSAGE</h4>
         <form action="https://formspree.io/lokman.musliu@gmail.com" method="POST">
           <input type="text" name="name" placeholder="Name">

@@ -26,6 +26,16 @@ html {
     scroll-behavior: smooth;
 }
 
+::-moz-selection {
+    color: black;
+    background: $orange;
+}
+
+::selection {
+    color: black;
+    background: $orange;
+}
+
 .heading-text {
     display: inline-block;
     letter-spacing: 5px;
